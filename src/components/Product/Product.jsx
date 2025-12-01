@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 import classes from './Product.module.css';
 
 function Product() {
-    const [Products,setProducts] = useState([])
+    const [products,setProducts] = useState([])
 
     useEffect(()=>{
         axios.get("https://fakestoreapi.com/products")
@@ -17,7 +17,7 @@ function Product() {
   return (
     <section className={classes.products_container}>
         {
-            Products.map((singleProduct)=>{
+            products.map((singleProduct)=>{
                 return <ProductCard key={singleProduct.id} product ={singleProduct}/>
             })
         }

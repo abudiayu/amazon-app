@@ -4,7 +4,7 @@ import CurrencyFormat from '../CurrencyFormat/CurrencyFormat';
 import classes from './Product.module.css';
 
 function ProductCard({product}) {
-    const { id, title, price, image, rating } = product;
+    const {title, price, image, rating } = product;
   return (
     <div className={classes.card_container}>
         <div>
@@ -30,4 +30,4 @@ function ProductCard({product}) {
   )
 }
 
-export default ProductCard
+export default ProductCard;
