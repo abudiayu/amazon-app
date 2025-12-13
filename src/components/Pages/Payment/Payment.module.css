@@ -1,0 +1,94 @@
+.payment_header {
+  font-size: 24px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.payment{
+    padding: 30px;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+.flex h3{
+    min-width: 300px;
+}
+.flex img{
+    width: 80px !important;
+}
+.flex div{
+    height: auto !important;
+}
+.payment_card_container{
+    max-width: 350px;
+    width: 100%;
+}
+.payment_details{
+    font-size: 20px;
+}
+.payment_price{
+    padding: 20px;
+}
+.payment_price >div{
+    display: flex;
+    font-size: 16px;
+    gap: 10px;
+}
+.payment_price button{
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.payment_price button:hover{
+    background-color: var(--primary-shade);
+}
+@media (max-width: 1200px) {
+  .payment {
+    padding: 20px;
+  }
+
+  .flex {
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .flex h3 {
+    min-width: 220px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 720px) {
+  .payment {
+    padding: 10px 0;
+  }
+
+  .flex {
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+    padding: 2px;
+  }
+  .user_address{
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .flex h3 {
+    min-width: unset;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .flex img {
+    max-width: 500px ;   /* Amazon mobile logo size */
+    width: auto !important;
+    margin-inline: 4px;
+  }
+}
