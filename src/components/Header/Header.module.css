@@ -58,7 +58,7 @@
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
-  width: 100%;
+  width: 95%;
 
 }
 .search select, .search input{
@@ -74,7 +74,7 @@
 .search input {
   border: 1px solid white;
   width: 100%;
-  margin-right: -2px;
+  margin-right:-2px;
 }
 
 .search svg {
@@ -159,6 +159,7 @@
   display: flex;
   list-style: none;
   gap: 8px;
+  background:#232f3e ;
 }
 .lower_container ul li{
   padding: 8px;
@@ -179,7 +180,7 @@
 }
 @media screen and (max-width:720px){
   .lower_container .view{
-    width: 50px;
+    width: 80px;
   }
   .header_container{
     display: flex;
@@ -211,7 +212,8 @@
   .lower_container ul.show li:not(:first-child){
     display: flex;
     margin-left: 20px;
-    width: 150px;
+    margin-bottom: 5px;
+    width: 170px;
   }
   .lower_container ul.show li a {
     display: flex;
