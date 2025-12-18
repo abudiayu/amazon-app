@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import LayOut from '../../LayOut/LayOut';
 import { db } from '../../../Utility/firebase';
 import { DataContext } from '../../DataProvider/DataProvider';
-import classes from "./Order.module.css";
+import classes from "./order.module.css";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 import ProductCard from '../../Product/ProductCard';
 

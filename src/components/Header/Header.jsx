@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
-import classes from "./Header.module.css";
+import classes from "./header.module.css";
 import { SlLocationPin } from "react-icons/sl";
 import LowerHeader from './LowerHeader';
 import {Link} from 'react-router-dom';
