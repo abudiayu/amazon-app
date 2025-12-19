@@ -8,7 +8,7 @@ import { DataContext } from "./components/DataProvider/DataProvider";
 
 function App() {
 
-// sign OUt Functionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+// sign OUt Function
 
   const [{user},dispatch] = useContext(DataContext);
   useEffect(()=>{
