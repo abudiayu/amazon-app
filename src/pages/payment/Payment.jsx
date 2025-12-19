@@ -1,20 +1,20 @@
 import React, { useContext, useState } from 'react';
-import LayOut from '../../LayOut/LayOut';
+import LayOut from '../../components/LayOut/LayOut';
 import classes from "./payment.module.css";
-import { DataContext } from '../../DataProvider/DataProvider';
-import ProductCard from "../../Product/ProductCard";
+import { DataContext } from '../../components/DataProvider/DataProvider';
+import ProductCard from "../../components/Product/ProductCard";
 import { 
   useStripe,
   useElements,
   CardElement
 } from "@stripe/react-stripe-js";
-import CurrencyFormat from '../../CurrencyFormat/CurrencyFormat';
-import { axiosInstance } from '../../../Api/axios';
+import CurrencyFormat from '../../components/CurrencyFormat/CurrencyFormat';
+import { axiosInstance } from '../../Api/axios';
 import { ClipLoader } from 'react-spinners';
-import { db } from '../../../Utility/firebase';
+import { db } from '../../Utility/firebase';
 import { useNavigate } from 'react-router-dom';
 import { collection, doc, setDoc } from "firebase/firestore";
-import { Type } from '../../../Utility/action.type';
+import { Type } from '../../Utility/action.type';
 
 function Payment() {
 

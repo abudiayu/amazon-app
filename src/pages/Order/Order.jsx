@@ -1,10 +1,10 @@
 import React, { useContext, useState, useEffect } from 'react';
-import LayOut from '../../LayOut/LayOut';
-import { db } from '../../../Utility/firebase';
-import { DataContext } from '../../DataProvider/DataProvider';
+import LayOut from '../../components/LayOut/LayOut';
+import { db } from '../../Utility/firebase';
+import { DataContext } from '../../components/DataProvider/DataProvider';
 import classes from "./order.module.css";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
-import ProductCard from '../../Product/ProductCard';
+import ProductCard from '../../components/Product/ProductCard';
 
 function Order() {
   const [{ user }] = useContext(DataContext);

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import classes from "./result.module.css";
-import LayOut from '../../LayOut/LayOut';
+import LayOut from '../../components/LayOut/LayOut';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { productUrl } from '../../../Api/endPoints';
-import ProductCard from '../../Product/ProductCard';
-import Loader from "../../Loader/Loding";
+import { productUrl } from '../../Api/endPoints';
+import ProductCard from '../../components/Product/ProductCard';
+import Loader from "../../components/Loader/Loding";
 
 function Result() {
   const [results, setResults] = useState([]);
