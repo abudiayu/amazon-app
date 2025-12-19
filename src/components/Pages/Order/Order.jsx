@@ -37,7 +37,7 @@ function Order() {
         <div className={classes.order_container}>
           <h2>Your Orders</h2>
           {
-            order?.length == 0 && 
+            order?.length === 0 && 
             <div style={{padding:"20px"}}> 
               🛒✨ Oops! No orders here yet. Start shopping and make it exciting!
             </div>

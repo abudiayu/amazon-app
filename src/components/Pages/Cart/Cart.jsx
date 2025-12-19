@@ -22,7 +22,7 @@ function Cart() {
       item
     })
   }
-  const decrement =(id) =>{
+  const decrement = (id) =>{
     dispatch({
       type:Type.REMOVE_FROM_BASKET,
       id
@@ -65,7 +65,7 @@ function Cart() {
         </div>
 
         {
-          basket?.length!==0&&(
+          basket?.length !== 0 &&(
             <div className={classes.subtotal}>
               <div>
                 <p>Subtotal ({basket?.length} items)</p>

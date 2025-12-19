@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
-import classes from "./Header.module.css";
+import classes from "./header.module.css";
 import { Link } from 'react-router-dom';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
