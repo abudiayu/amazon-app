@@ -3,7 +3,7 @@ import LayOut from '../../components/LayOut/LayOut';
 import CarouselEffect from '../../components/Carousel/CarouselEffect';
 import Category from '../../components/Category/Category';
 import Product from '../../components/Product/Product';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/footer/Footer';
 
 function Landing() {
   return (
